@@ -1,0 +1,151 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/Fundo.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+header{
+    margin-top: 32px;
+    
+}
+
+
+header img{
+    width: 120px;
+    border-radius: 50%;
+    
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    animation: fromTop .6s .2s backwards;
+    transition: 150ms;
+}
+
+header div:hover{
+    transform: scale(1.1);
+    
+}
+
+main {
+    margin-top: 32px;
+    max-width: 580px;
+    width: 90%;
+}
+
+section{
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    margin-bottom: 24px;
+    color: white;
+    padding-top: 4px;
+
+}
+
+main section:nth-child(1){
+    animation: fromBottom .7s .2s backwards;
+}
+
+main section:nth-child(2){
+    animation: fromBottom .7s .6s backwards;
+}
+
+main section:nth-child(3){
+    animation: fromBottom .7s 1s backwards;
+}
+
+section h2{
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+
+}
+
+section p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+
+}
+
+section div{
+    background-color: #2A2634;
+    padding: 24px 32px 32px 32px;
+    border-radius: 8px;
+
+}
+
+section ul{
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul li{
+    transition: 150ms;
+}
+
+ul li:hover{
+    transform: scale(1.1); 
+}
+    
+.games-list img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+.chanel-list img{
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #443E54;
+}
+
+@keyframes fromTop {
+
+    from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes fromBottom {
+
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
